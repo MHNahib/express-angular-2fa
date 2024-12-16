@@ -1,0 +1,40 @@
+# See https://help.github.com/en/articles/ignoring-files#create-a-gitignore-file
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Angular
+/dist/
+/node_modules/
+/src/environments/environment.prod.ts
+/.angular
+/karma.conf.js
+/tsconfig.spec.json
+
+# Express
+/dist-node/
+/logs/
+
+# TypeORM
+/migrations/
+/ormconfig.json
+/ormconfig.js
+/typeorm.dbml
+
+# Other
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.DS_Store
+*.log
+*.pid
+*.seed
+*.spec.js
+*.spec.ts
+*.test.js
+*.test.ts
+*.yarn-integrity
