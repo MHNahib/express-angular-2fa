@@ -21,6 +21,12 @@ class CrudService<T extends ObjectLiteral> {
   async get(id: number): Promise<T | null> {
     return this.repo.findOneBy({ id } as any);
   }
+  async getByKey(
+    key: string,
+    value: string | number | boolean
+  ): Promise<T | null> {
+    return this.repo.findOneBy({ [key]: value } as any);
+  }
 }
 
 export default CrudService;

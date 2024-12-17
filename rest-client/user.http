@@ -9,3 +9,13 @@ content-type: application/json
     "email": "chatgpt@openai.com",
     "password": "iamchatgpt"
 }
+
+############
+## login 
+POST  {{baseUrl}}/auth/login
+content-type: application/json
+
+{
+    "email": "chatgpt@openai.com",
+    "password": "iamchatgpt"
+}
