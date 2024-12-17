@@ -5,5 +5,5 @@ export const AppDataSource = new DataSource({
   database: "../db.sqlite",
   synchronize: true,
   logging: false,
-  entities: ["./src/db/entity/*.ts"],
+  entities: [__dirname + "/../**/*.entity.{js,ts}"],
 });

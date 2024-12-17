@@ -1,0 +1,11 @@
+@baseUrl = http://localhost:3000
+
+
+## add user 
+POST  {{baseUrl}}/auth/signup
+content-type: application/json
+
+{
+    "email": "chatgpt@openai.com",
+    "password": "iamchatgpt"
+}
